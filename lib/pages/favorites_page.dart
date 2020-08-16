@@ -9,7 +9,7 @@ class FavoritesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return !favoriteMeals.isEmpty
+    return favoriteMeals.isNotEmpty
         ? Center(
             child: ListView.builder(
               itemBuilder: (context, index) => MealItem(

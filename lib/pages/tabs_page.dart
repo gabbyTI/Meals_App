@@ -5,7 +5,7 @@ import '../pages/favorites_page.dart';
 import '../pages/categories_page.dart';
 
 class TabsPage extends StatefulWidget {
-  List<Meal> favoriteMeals;
+  final List<Meal> favoriteMeals;
 
   TabsPage(this.favoriteMeals);
 
@@ -18,7 +18,6 @@ class _TabsPageState extends State<TabsPage> {
   int _selectedPageIndex = 0;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _pages = [
       {

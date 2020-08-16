@@ -19,7 +19,6 @@ class _FiltersPageState extends State<FiltersPage> {
   bool _lactoseFree;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _glutenFree = widget.currentFilters['gluten'];
     _vegetarian = widget.currentFilters['vegetarian'];

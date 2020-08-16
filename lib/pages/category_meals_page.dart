@@ -18,13 +18,9 @@ class _CategoryMealsPageState extends State<CategoryMealsPage> {
   List<Meal> _categoryMeals;
   var _loadedInitData = false;
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
-
   @override
   void didChangeDependencies() {
+    // ignore: todo
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
     if (!_loadedInitData) {
@@ -39,12 +35,6 @@ class _CategoryMealsPageState extends State<CategoryMealsPage> {
           .toList();
       _loadedInitData = true;
     }
-  }
-
-  void _removeMeal(String mealId) {
-    setState(() {
-      _categoryMeals.removeWhere((meal) => meal.id == mealId);
-    });
   }
 
   @override
